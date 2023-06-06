@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	double n;
+	scanf("%lf", &n);
+	if(n>=9.0 && n<=10)   printf("Xuat sac");
+	else if(n>=8.0 && n<=9.0)    printf("Gioi");
+	else if(n>=7.0 && n<=8.0)    printf("Kha");
+	else if(n>=5 && n<=7.0)      printf("Trung binh");
+	else                         printf("Kem");
+	return 0;
+}
