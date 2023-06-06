@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	double x;
+	scanf("%lf", &x);
+	double T = (1/2 )*x*n + 2.32 *x*x*x;
+	printf("%.5lf",T);
+	return 0;
+}
