@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+int namNhuan(int n)
+{
+	return (n%4==0 && n%100!=0)?1:0;
+}
+
+
+
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	if(namNhuan(n))
+	{
+		printf("Nam do la nam nhuan");
+	}else
+	{
+		printf("Nam do khong la nam nhuan");
+	}
+	return 0;
+}
