@@ -2,11 +2,15 @@
 #include <math.h>
 int main()
 {
-	int n;
-	scanf("%d", &n);
-	double x;
-	scanf("%lf", &x);
-	double T = (1/2 )*x*n + 2.32 *x*x*x;
-	printf("%.5lf",T);
+	int So_luong;
+	scanf("%d", &So_luong);
+	double Don_gia;
+	scanf("%lf", &Don_gia);
+	double Giam_gia = So_luong * Don_gia *12/100;
+	printf("%.5lf\n",Giam_gia);
+	double Cuoc_van_chuyen = So_luong * Don_gia *5/100;
+	printf("%.5lf\n",Cuoc_van_chuyen);
+	double So_tien_phai_tra = So_luong * Don_gia - Giam_gia + Cuoc_van_chuyen;
+	printf("%.5lf",So_tien_phai_tra);
 	return 0;
 }
