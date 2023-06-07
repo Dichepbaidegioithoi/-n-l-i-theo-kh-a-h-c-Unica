@@ -1,0 +1,19 @@
+//Cau lenh goto de truy cap den 1 cau lenh nao do duoc chi dinh boi nhan
+//tinh tong cac so nguyen tu 1 den n voi n nhap tu ban phim (khong su dung vong lap)
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	int i=0;
+	int tong=0;
+	tinh: tong+=i;
+	i++;
+	if(i<=n)
+	goto tinh;
+		printf("Tong = %d",tong);
+	
+	return 0;
+}
