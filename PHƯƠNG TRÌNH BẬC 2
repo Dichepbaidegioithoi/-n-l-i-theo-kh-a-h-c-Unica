@@ -1,0 +1,38 @@
+//gia phuong trinh bac 2 ax^2 + bx +c =0;
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int a,b,c;
+	double x,x1,x2;
+	double denta;
+	scanf("%d %d %d", &a, &b, &c);
+	if(a==0)
+	{
+		if(b==0)    printf("Phuong trinh vo nghiem");
+		else {
+			x=(double) -c/b;
+			printf("%.2lf",x);
+		}
+	}
+	else
+	{
+		denta = b*b- 4*a*c;
+		if(denta > 0) 
+		{
+			x1=(-b + sqrt(denta))/(2*a);
+			x2=(-b - sqrt(denta))/(2*a);
+			printf("%.2lf %.2lf",x1,x2);
+		}
+		else if(denta ==0)
+		{
+			x= -b/ (2*a);
+			printf("%.2lf",x);
+		}
+		else
+		{
+			printf("Phuong trinh vo nghiem");
+		}
+	}
+	return 0;
+}
