@@ -1,0 +1,23 @@
+//Thuat toan tim mat khau dung voi Break;
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	printf("Nhap mat khau vao nao nguoi ae:\n");
+	int passWord;
+	for(int i=0;i<10;i++) //toi da cho nhap mat khau la 10 lan
+	{
+		scanf("%d", &passWord);
+		if(passWord == 1)
+		{
+			printf("Chuc mung ban da nhap dung mat khau roi\n");
+	        printf("Moi vao nha choi neoooo :3");
+			break;
+		}
+		printf("Mat khau sai roi !\n");
+		printf("Nhap lai di nao.... Fighting !!");
+		printf("\n");
+	}
+	printf("Pp... Lan sau den pa mat khau tiep nhe");
+	return 0;
+}
