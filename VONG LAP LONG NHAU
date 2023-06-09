@@ -1,0 +1,67 @@
+// Cac vong lap long nhau
+//For 
+#include <stdio.h>
+int main()
+{
+	for(int i=0;i<=2;i++)
+	{
+		for(int j=0;j<=2;j++)
+		{
+			printf("Hello");
+		}
+		printf("Hi");
+	}
+	return 0;
+}
+//Run ra 
+/*  Hello
+	Hello
+	Hello
+	Hi
+	Hello
+	Hello
+	Hello
+	Hi
+	Hello
+	Hello
+	Hello
+	Hi
+	*/
+//WHILE
+#include <stdio.h>
+int main()
+{
+	int i=0;
+	while(i<=2)
+	{
+		int j=0;
+		while(j<=2)
+		{
+			printf("Hello");
+			j++;
+		}
+		printf("Hi");
+		i++;
+	}
+	return 0;
+}
+//Run ra giong tren
+
+//Do while
+#include <stdio.h>
+int main()
+{
+	int i=0;
+	do
+	{
+		do {
+		printf("Hello");
+		j++;
+	}while(j<=2);
+	printf("Hi");
+	i++;
+		}while(i<=2);
+		return 0;
+	}
+	
+	//run ra giong tren 
