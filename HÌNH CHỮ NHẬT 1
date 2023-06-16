@@ -1,0 +1,38 @@
+// CHÉP CODE
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int n,m;
+	scanf("%d %d", &n, &m);
+	/* 1234       12345       1234 
+	   2341       23451		  2341
+	   3421       34521       3421
+	   4321                   4321
+	                          5321
+	                          6321
+*/
+for(int i=1;i<=n;i++)
+{
+	printf("%d",i);
+	for(int j=i+1;j<=m;j++)
+	{
+		printf("%d",j);
+	}
+	if(i<=m)
+	{
+		for(int k=i-1;k>0;k--)
+		{
+			printf("%d",k);
+		}
+	}else
+	{
+		for(int k=m-1;k>0;k--)
+		{
+		printf("%d",k);
+	}
+	}
+	printf("\n");
+
+}
+}
