@@ -1,0 +1,44 @@
+//Tự viết code không chép nữa
+/*
+4 4     1234          m,n  i tăng theo giá trị
+		2343        j = i+1 ;j++; j<=n
+		3432        nếu i<=n  k=n-1;k>n-i;k--
+		4321	      else  k=i-1;k>i-n;k--
+3 5 	12345     
+		23454
+		34543
+5 3
+123
+232
+321
+432
+543	*/
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int m,n;
+	scanf("%d %d", &m, &n);
+	for(int i=1;i<=m;i++)
+	{
+		printf("%d",i);
+		for(int j=i+1;j<=n;j++)
+		{
+			printf("%d",j);
+		}
+		if(i<=n)
+		{
+			for(int k=n-1;k>n-i;k--)
+			{
+				printf("%d",k);
+			}
+		}else
+		{
+			for(int k=i-1;k>i-n;k--)
+			{
+				printf("%d",k);
+			}
+		}
+		printf("\n");
+	}
+	}	
